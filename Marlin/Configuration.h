@@ -355,7 +355,7 @@
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
 #define HEATER_4_MAXTEMP 275
-#define BED_MAXTEMP 150
+#define BED_MAXTEMP 130
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -378,11 +378,15 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-
+  // PID Prusa i3 Steel
+  #define  DEFAULT_Kp 34.38 //22
+  #define  DEFAULT_Ki 2.5 //1.08
+  #define  DEFAULT_Kd 118.27 //114
+  
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
